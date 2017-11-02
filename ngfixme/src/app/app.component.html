@@ -1,0 +1,29 @@
+
+
+
+
+
+
+<section class="todoapp">
+  <header class="header">
+    <h1>Student Details</h1>
+<form>
+  <label  for="Id">ID</label>
+  <input type="text" name="id" placeholder="Enter the Id" [(ngModel)]="model.id" >
+  <label  for="Id">Name</label>
+  <input type="text" name="name" placeholder="Enter the name" [(ngModel)]="model.name">
+  <label  for="Id">college</label>
+  <input type="text" name="college" placeholder="Enter the college"[(ngModel)]="model.college">
+  <label  for="age">age</label>
+   <input type="text" name="age" placeholder="Enter the college"[(ngModel)]="model.age">
+
+    <button type="submit" class="btn btn-info" (click)="addTodo()">save</button>
+
+
+
+    <button type="submit" class="btn btn-info" (click)="updateTodo(model.id)">update</button>
+    <button type="submit" class="btn btn-info" (click)="deleteTodo()">delete </button>
+
+</form>
+     </header>
+</section>
